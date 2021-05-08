@@ -11,6 +11,44 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {"packages":["corechart"]});
+          google.charts.setOnLoadCallback(drawNationChart);
+          google.charts.setOnLoadCallback(drawTitleChart);
+          function drawNationChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn("string", "Nation");
+            data.addColumn("number", "Signers of Multiple Treaties");
+            data.addRows([
+              ["Ojibwe", 22],
+              ["Odawa", 3],
+              ["Potawatomi", 19],
+              ["Anishinaabe (Specific Nation Unclear)", 3],
+              ["United States", 61]
+            ]);
+            var options = {title:"Nations", width:500, height:300};
+            var chart = new google.visualization.PieChart(document.getElementById("nation_chart_div"));
+            chart.draw(data, options);
+          }
+          function drawTitleChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn("string", "Title");
+            data.addColumn("number", "Signers of Multiple Treaties");
+            data.addRows([
+              ["1st Chief", 3],
+              ["Chief", 7],
+              ["Headman", 3],
+              ["Commissioner", 7],
+              ["Indian Agent", 7],
+              ["Interpreter", 7],
+              ["None", 74]
+            ]);
+            var options = {title:"Titles", width:500, height:300};
+            var chart = new google.visualization.PieChart(document.getElementById("title_chart_div"));
+            chart.draw(data, options);
+          }
+        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -56,33 +94,57 @@
                 </div>
             </div>
         </section>
-        <section class="projects-section bg-light" id="design">
+        <section class="projects-section" id="design">
             <div class="container">
                 <!-- Design-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/treaties.png" alt="Map of Indigenous land cessions through Michigan-related treaties from 1795 to 1842."/></div>
+                    <figure class="col-xl-8 col-lg-7">
+                      <img class="img-fluid mb-3 mb-lg-0" src="assets/img/treaties.png" alt="Map illustrating cessions of Indigenous Lands through Michigan-related treaties between 1795 and 1842."/>
+                      <figcaption class="text-white">1. Treaty of Greenville (1795); 2. Treaty of Detroit (1807); 3. Treaty of the Maumee Rapids (1817); 4. Treaty of Saginaw (1819); 5. Treaty at Sault Ste. Marie (1820); 6. Treaty of Chicago (1821); 7. Treaty of Carey Mission (1828); 8. Treaty of Chicago (1833); 9. Treaty of Washington (1836); 10. Treaty of the Cedars (1836); 11. Treaty of La Pointe (1842)</figcaption>
+                    </figure>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Background</h4>
-                            <p class="text-black-50 mb-0"><i>Six Degrees of Great Lakes Treaties</i> arose from a desire to see the names of individuals who signed onto the late-eighteenth and nineteenth-century Indigenous land cession treaties that shaped what would become the state of Michigan dynamically displayed. Thus, it began by drawing heavily upon <a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Pages/default.aspx" target="_blank">Native American Treaties resources</a> from Central Michigan University. As the map to the left suggests, CMU identifies <a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Text_of_Michigan_Related_Treaties/Pages/Map-of-Treaty-Cessions.aspx" target="_blank">11 treaties</a> that resulted in cessions of future Michigan lands. Approaching this digital cultural heritage project considering only those documents, however, would neglect to fully factor in how Anishinaabeg who called what is now Michigan home (indeed, whose descendents continue to call it home) transgressed the national and territorial borders Euro-American authorities were attempting to cement. Hunting, fishing, producing maple sugar, and interacting with their homelands in a multitude of other ways propelled Ojibwe, Odawa, and Potawatomi peoples to tred beyond the lines Euro-American powers claimed were drawn upon their lands and waters. "Six Degrees of Great Lakes Treaties," then, utilizes a broader corpus that interested researchers are free to <a href="https://drive.google.com/file/d/1C2mYjMc29HMtJ1mW9S4PY7hHvgCqg8eI/view?usp=sharing" target="_blank">view, copy, and comment upon</a>.
+                            <h2 class="text-white mb-5">Design</h2>
+                            <p class="text-white mb-0">The focal point of <i>Six Degrees of Great Lakes Treaties</i> is an interactive visualization of connections between approximately 1,600 Anishinaabe and American signers of 24 treaties beginning with the Treaty of Greenville in 1795 and ending with the Treaty of Detroit in 1855. It can be viewed by clicking on the "Visualization" button above. This project began as an examination of just <u><a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Text_of_Michigan_Related_Treaties/Pages/Map-of-Treaty-Cessions.aspx" target="_blank">11 treaties</a></u> (pictured to the left) which resulted in the cession of Lands what would eventually become the state of Michigan. However, it soon became apparent that approaching this digital cultural heritage project considering only those documents would neglect to fully factor in how Anishinaabeg who called what is now Michigan home (indeed, whose descendents continue to call it home) transgressed the national and territorial borders Euro-American authorities were attempting to cement. Hunting, fishing, producing maple sugar, and interacting with their homelands in a multitude of other ways propelled Ojibwe, Odawa, and Potawatomi peoples to tred beyond the lines Euro-American powers claimed were drawn upon their lands and waters. "Six Degrees of Great Lakes Treaties," then, utilizes a broader corpus that interested researchers are free to <u><a href="https://drive.google.com/file/d/1C2mYjMc29HMtJ1mW9S4PY7hHvgCqg8eI/view?usp=sharing" target="_blank">view, copy, and comment upon</a></u>.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center no-gutters">
+                <!-- Content Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/signers.png" alt="Screenshot from the US Treaty Signer Project." /></div>
-                    <div class="col-lg-6 order-lg-first">
+                    <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <p class="mb-0 text-white">In many ways, "Six Degrees of Great Lakes Treaties" could be viewed as a more geographically focused companion to the <a href="http://portal.treatysigners.org/us/SitePages/AboutILTF.aspx" target="_blank">"US Treaty Signer Project"</a>. Both aim to assist in the navigation of dense government documents that ofen obscure the identities of Indigenous actors.
-                                     </p>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                </div>
-                            </div>
+                        <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <p class="mb-0 text-white">In many ways, <i>Six Degrees of Great Lakes Treaties</i> could be viewed as a more geographically focused companion to the <a href="http://portal.treatysigners.org/us/SitePages/AboutILTF.aspx" target="_blank">"US Treaty Signer Project"</a>. Both aim to assist in the navigation of dense government documents that ofen obscure the identities of Indigenous actors.
+                            </p>
+                            <hr class="d-none d-lg-block mb-0 ml-0" />
+                        </div>
+                        </div>
                         </div>
                     </div>
                 </div>
+              <!-- Chart Row-->
+              <div class="row justify-content-center no-gutters">
+                  <table class="columns">
+                    <tr>
+                      <td><div id="nation_chart_div" style="border: 1px solid #ccc"></div></td>
+                      <td><div id="title_chart_div" style="border: 1px solid #ccc"></div></td>
+                    </tr>
+                  </table>
+                  <div class="col-lg-6 order-lg-first">
+                      <div class="bg-black text-center h-100 project">
+                      <div class="d-flex h-100">
+                      <div class="project-text w-100 my-auto text-center text-lg-right">
+                        <p class="mb-0 text-white">MORE TO COME SOON
+                        </p>
+                        <hr class="d-none d-lg-block mb-0 mr-0" />
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
             </div>
         </section>
         <!-- Sources-->
@@ -90,7 +152,7 @@
             <div class="container">
               <div class="col-md-10 col-lg-8 mx-auto text-center">
                 <h2 class="text-white mb-4">Sources</h2>
-                  <table class="text-white mb-5">
+                  <table class="text-white mb-4">
                     <thead>
                       <tr>
                         <td colspan="3">To further contextualize the visualization at the center of this project, a complete list of treaties it incorporates is provided below. Within the "Treaty Name" column are the most commonly used names for each document. Adjacent entries listed under "Alternate Name" represent these documents' formal titles as recorded in the second volume of Charles J. Kappler's <i>Indian Affairs: Laws and Treaties</i> (Washington, D.C.: Government Printing Office, 1904), which is digitally accessible through the <u><a href="https://dc.library.okstate.edu/digital/collection/kapplers" target="_blank">Oklahoma State University Library</a></u>. Finally, links to scanned copies of original treaties and/or cleaner transcripts of these primary sources are compiled under "Original/Transcript" based on their availablity. All links to accessible scans derive from <i><u><a href="https://digitreaties.org/treaties/" target="_blank">Treaties Explorer</a></u></i>, a project that the <u><a href="https://omeka.dlcs-ida.org/s/ida/page/home" target="_blank">Indigenous Digital Archive</a></u> has spearheaded in conjunction with the National Archives. Transcripts added for their enhanced readibility originate from either the Yale Law School Lillian Goldman Law Library's <i><u><a href="https://avalon.law.yale.edu/" target="_blank">Avalon Project</a></u></i> or Central Michigan University's Clarke Historical Library <u><a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Pages/default.aspx" target="_blank">Research Resources</a></u>.</td>

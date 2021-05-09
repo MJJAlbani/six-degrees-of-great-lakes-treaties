@@ -27,7 +27,7 @@
               ["Anishinaabe (Specific Nation Unclear)", 3],
               ["United States", 61]
             ]);
-            var options = {title:"Nations", width:500, height:300};
+            var options = {title:"Nations of Great Lakes Treaty Signers", width:500, height:250};
             var chart = new google.visualization.PieChart(document.getElementById("nation_chart_div"));
             chart.draw(data, options);
           }
@@ -36,15 +36,15 @@
             data.addColumn("string", "Title");
             data.addColumn("number", "Signers of Multiple Treaties");
             data.addRows([
-              ["1st Chief", 3],
               ["Chief", 7],
+              ["1st Chief", 3],
               ["Headman", 3],
               ["Commissioner", 7],
               ["Indian Agent", 7],
               ["Interpreter", 7],
               ["None", 74]
             ]);
-            var options = {title:"Titles", width:500, height:300};
+            var options = {title:"Titles of Great Lakes Treaty Signers", width:500, height:250};
             var chart = new google.visualization.PieChart(document.getElementById("title_chart_div"));
             chart.draw(data, options);
           }
@@ -85,7 +85,7 @@
                     <div class="col-lg-8 mx-auto">
                       <h2 class="text-white mb-5">Introduction</h2>
                         <p class="text-white mb-5">
-                          During the late-eighteenth and nineteenth centuries, treaty negotiations served as critical sites of contact between Anishinaabeg – members of the Three Fires Confederacy of Ojibwe, Odawa, and Potawatomi – Americans, and peoples of mixed ancestry across the Great Lakes. While the United States government attempted to exert complete control over all the territory it claimed on paper, the Great Lakes region's Indigenous inhabitants strived to retain sovereignty within their <u><a href="https://decolonialatlas.wordpress.com/2015/04/14/the-great-lakes-in-ojibwe-v2/" target="_blank">homelands</a></u>. Over the course of several decades, many Anishinaabe and American individuals emerged as diplomats at multiple treaty negotiations that would reshape how both Native and Euro-Americans settled upon and interacted with the Lands around them. <i>Six Degrees of Great Lakes Treaties</i> is a digital cultural heritage project that uses <u><a href="https://gephi.org/" target="_blank">Gephi</a></u> (an open source data visualization platform) to illustrate linkages between individuals who presented themselves as representatives for their communities and nations time and time again. Although the Great Lakes region may be geographically vast, connections weaved through recurring diplomatic entanglements in the late-eighteenth and nineteenth centuries rendered it more socially close-knit than casual onlookers might expect.
+                          During the late-eighteenth and nineteenth centuries, treaty negotiations served as critical sites of contact between Anishinaabeg – members of the Three Fires Confederacy of Ojibwe, Odawa, and Potawatomi – Americans, and peoples of mixed ancestry across the Great Lakes. While the United States government attempted to exert complete control over all the territory it claimed on paper, the Great Lakes region's Indigenous inhabitants strived to retain sovereignty within their <u><a href="https://decolonialatlas.wordpress.com/2015/04/14/the-great-lakes-in-ojibwe-v2/" target="_blank">homelands</a></u>. Over the course of several decades, many Anishinaabe and American individuals emerged as diplomats at multiple treaty negotiations that would reshape how both Native and Euro-Americans settled upon and interacted with the Lands around them. <i>Six Degrees of Great Lakes Treaties</i> is a digital cultural heritage project that uses <u><a href="https://gephi.org/" target="_blank">Gephi</a></u>, an open source data visualization platform, to illustrate linkages between individuals who presented themselves as representatives for their communities and nations time and time again. Although the Great Lakes region may be geographically vast, connections weaved through recurring diplomatic entanglements in the late-eighteenth and nineteenth centuries rendered it more socially close-knit than casual onlookers might expect.
                         </p>
                         <p class="text-white mb-5">
                           Masthead Image: "View of the Great Treaty Held at Prarie du Chien, September 1825" by James Otto Lewis (Courtesy: <u><a href="https://www.loc.gov/pictures/item/2001696068/" target="_blank">Library of Congress</a></u>)
@@ -98,26 +98,35 @@
             <div class="container">
                 <!-- Design-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <figure class="col-xl-8 col-lg-7">
-                      <img class="img-fluid mb-3 mb-lg-0" src="assets/img/treaties.png" alt="Map illustrating cessions of Indigenous Lands through Michigan-related treaties between 1795 and 1842."/>
-                      <figcaption class="text-white">1. Treaty of Greenville (1795); 2. Treaty of Detroit (1807); 3. Treaty of the Maumee Rapids (1817); 4. Treaty of Saginaw (1819); 5. Treaty at Sault Ste. Marie (1820); 6. Treaty of Chicago (1821); 7. Treaty of Carey Mission (1828); 8. Treaty of Chicago (1833); 9. Treaty of Washington (1836); 10. Treaty of the Cedars (1836); 11. Treaty of La Pointe (1842)</figcaption>
+                    <figure class="col-xl-6 col-lg-7">
+                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/treaties.png" alt="Map illustrating cessions of Indigenous Lands through Michigan-related treaties between 1795 and 1842."/>
+                        <figcaption class="small text-white ml-1 mr-1">1. Treaty of Greenville (1795); 2. Treaty of Detroit (1807); 3. Treaty of the Maumee Rapids (1817); 4. Treaty of Saginaw (1819); 5. Treaty at Sault Ste. Marie (1820); 6. Treaty of Chicago (1821); 7. Treaty of Carey Mission (1828); 8. Treaty of Chicago (1833); 9. Treaty of Washington (1836); 10. Treaty of the Cedars (1836); 11. Treaty of La Pointe (1842)</figcaption>
                     </figure>
-                    <div class="col-xl-4 col-lg-5">
+                    <div class="col-xl-6 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h2 class="text-white mb-5">Design</h2>
-                            <p class="text-white mb-0">The focal point of <i>Six Degrees of Great Lakes Treaties</i> is an interactive visualization of connections between approximately 1,600 Anishinaabe and American signers of 24 treaties beginning with the Treaty of Greenville in 1795 and ending with the Treaty of Detroit in 1855. It can be viewed by clicking on the "Visualization" button above. This project began as an examination of just <u><a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Text_of_Michigan_Related_Treaties/Pages/Map-of-Treaty-Cessions.aspx" target="_blank">11 treaties</a></u> (pictured to the left) which resulted in the cession of Lands what would eventually become the state of Michigan. However, it soon became apparent that approaching this digital cultural heritage project considering only those documents would neglect to fully factor in how Anishinaabeg who called what is now Michigan home (indeed, whose descendents continue to call it home) transgressed the national and territorial borders Euro-American authorities were attempting to cement. Hunting, fishing, producing maple sugar, and interacting with their homelands in a multitude of other ways propelled Ojibwe, Odawa, and Potawatomi peoples to tred beyond the lines Euro-American powers claimed were drawn upon their lands and waters. "Six Degrees of Great Lakes Treaties," then, utilizes a broader corpus that interested researchers are free to <u><a href="https://drive.google.com/file/d/1C2mYjMc29HMtJ1mW9S4PY7hHvgCqg8eI/view?usp=sharing" target="_blank">view, copy, and comment upon</a></u>.
+                            <h2 class="text-white mb-3">Design</h2>
+                            <p class="text-white mb-3">
+                              At the core of <i>Six Degrees of Great Lakes Treaties</i> is an interactive visualization of connections between approximately 1,600 Anishinaabe and American signers of 24 treaties beginning with the Treaty of Greenville (1795) and ending with the Treaty of Detroit (1855). It can be viewed by clicking the "Visualization" button above. Initially, the aim of this project was to analyze the signers of <u><a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Text_of_Michigan_Related_Treaties/Pages/Map-of-Treaty-Cessions.aspx" target="_blank">11 treaties</a></u> that resulted in the cession of Indigenous Lands (pictured to the left) the United States government would eventually consolidate into the state of Michigan. However, it soon became clear that concentrating solely on these documents would lead to incomplete work. In the decades following European contact, Ojibwe, Odawa, and Potawatomi peoples who called what is now Michigan home (whose descendents, indeed, continue to call it home) navigated between borders Euro-American powers were attempting to cement. They transgressed territorial, state, and national lines which remained remarkably permeable well into the nineteenth century.
+                            </p>
+                            <p class="text-white mb-0">
+                              What started as a Michigan story quickly broadened to encompass most of the Great Lakes region amid an era of American expansion and state formation. How might Indigenous mobility in such a space coupled with Anishinaabe and American individuals' participation in multiple treaty negotiations have complicated these processes? Furthermore, what kinds of individuals repeatedly appeared to sign compacts with such significant consequences? The visualization <i>Six Degrees of Great Lakes Treaties</i> provides will hopefully help untangle the twisting and turning relationships between late-eighteenth and nineteenth-century treaty signers. Visitors to this site can also aid in that endeavour by leaving comments or critiques on the project <u><a href="https://drive.google.com/file/d/1C2mYjMc29HMtJ1mW9S4PY7hHvgCqg8eI/view?usp=sharing" target="_blank">dataset</a></u>. Data was scraped from treaties listed in the "Sources" section below and cleaned using <u><a href="https://openrefine.org/" target="_blank">OpenRefine</a></u>.
                             </p>
                         </div>
                     </div>
                 </div>
                 <!-- Content Row-->
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/signers.png" alt="Screenshot from the US Treaty Signer Project." /></div>
-                    <div class="col-lg-6">
+                    <figure class="col-lg-6">
+                        <img class="img-fluid mb-3 mb-lg-0" src="https://clements.umich.edu/wp-content/uploads/2019/12/mackinac-icon.jpg" alt="" />
+                        <figcaption class="small text-white ml-2 mr-2">"Indian Deed for the Island of Mackinac" (Courtesy: <u><a href="https://clements.umich.edu/exhibit/american-encounters/nah-case-5/signatures-from-mackinaw-island/" target="_blank">William L. Clements Library</a></u>)</figcaption>
+                    </figure>
+                    <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <p class="mb-0 text-white">In many ways, <i>Six Degrees of Great Lakes Treaties</i> could be viewed as a more geographically focused companion to the <a href="http://portal.treatysigners.org/us/SitePages/AboutILTF.aspx" target="_blank">"US Treaty Signer Project"</a>. Both aim to assist in the navigation of dense government documents that ofen obscure the identities of Indigenous actors.
+                            <h4 class="text-white mb-4">A Tale of Two Treaties</h4>
+                            <p class="mb-0 text-white">
+                              <!-- In many ways, <i>Six Degrees of Great Lakes Treaties</i> could be viewed as a more geographically focused companion to the <a href="http://portal.treatysigners.org/us/SitePages/AboutILTF.aspx" target="_blank">"US Treaty Signer Project"</a>. Both aim to assist in the navigation of dense government documents that ofen obscure the identities of Indigenous actors.-->
                             </p>
                             <hr class="d-none d-lg-block mb-0 ml-0" />
                         </div>
@@ -127,17 +136,19 @@
                 </div>
               <!-- Chart Row-->
               <div class="row justify-content-center no-gutters">
-                  <table class="columns">
+                  <table class="col-xl-6 columns">
                     <tr>
-                      <td><div id="nation_chart_div" style="border: 1px solid #ccc"></div></td>
-                      <td><div id="title_chart_div" style="border: 1px solid #ccc"></div></td>
+                      <td><div id="nation_chart_div" style="border: 3px solid #000000"></div></td>
+                      <td><div id="title_chart_div" style="border: 3px solid #000000"></div></td>
                     </tr>
                   </table>
-                  <div class="col-lg-6 order-lg-first">
+                  <div class="col-xl-6 order-lg-last">
                       <div class="bg-black text-center h-100 project">
                       <div class="d-flex h-100">
                       <div class="project-text w-100 my-auto text-center text-lg-right">
-                        <p class="mb-0 text-white">MORE TO COME SOON
+                        <h4 class="text-white mb-4">A Tale of Two Treaties</h4>
+                        <p class="mb-0 text-white">
+                          <!-- Hunting, fishing, producing maple sugar, and interacting with their homelands in a multitude of other ways propelled Ojibwe, Odawa, and Potawatomi peoples to tred beyond the lines Euro-American powers claimed were drawn upon their lands and waters. Despite repeated threats, Indigenous people around Michilimackinac did not face removal like other aboriginal groups in the Old Northwest, and that likely complicated the processes of U.S. state formation. In a recent text about the much more geographically isolated Grand Marais, scholar Timothy Cochrane asserts that the U.S. government possessed an interest in the American Fur Company (AFC) post on the farthest outskirts of the Michigan Territory because “[h]aving Americans on the ground, on the lands at question, could have substantially helped the argument that the border should be along the traditional water route, or the border we have today.”  The AFC, in other words, tacitly participated in the project of securing the northern border of the U.S.-->
                         </p>
                         <hr class="d-none d-lg-block mb-0 mr-0" />
                       </div>

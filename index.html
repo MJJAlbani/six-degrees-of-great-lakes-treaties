@@ -27,7 +27,7 @@
               ["Anishinaabe (Specific Nation Unclear)", 3],
               ["United States", 61]
             ]);
-            var options = {title:"Nations of Great Lakes Treaty Signers", width:500, height:250};
+            var options = {title:"Signers of Multiple Great Lakes Treaties - Nations", width:500, height:250};
             var chart = new google.visualization.PieChart(document.getElementById("nation_chart_div"));
             chart.draw(data, options);
           }
@@ -44,7 +44,7 @@
               ["Interpreter", 7],
               ["None", 74]
             ]);
-            var options = {title:"Titles of Great Lakes Treaty Signers", width:500, height:250};
+            var options = {title:"Signers of Multiple Great Lakes Treaties - Titles", width:500, height:250};
             var chart = new google.visualization.PieChart(document.getElementById("title_chart_div"));
             chart.draw(data, options);
           }
@@ -99,35 +99,47 @@
                 <!-- Design-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <figure class="col-xl-6 col-lg-7">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/treaties.png" alt="Map illustrating cessions of Indigenous Lands through Michigan-related treaties between 1795 and 1842."/>
-                        <figcaption class="small text-white ml-1 mr-1">1. Treaty of Greenville (1795); 2. Treaty of Detroit (1807); 3. Treaty of the Maumee Rapids (1817); 4. Treaty of Saginaw (1819); 5. Treaty at Sault Ste. Marie (1820); 6. Treaty of Chicago (1821); 7. Treaty of Carey Mission (1828); 8. Treaty of Chicago (1833); 9. Treaty of Washington (1836); 10. Treaty of the Cedars (1836); 11. Treaty of La Pointe (1842)</figcaption>
+                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/treaties.png" alt="Map illustrating cessions of Indigenous Lands through Michigan-related treaties between 1795 and 1842." />
+                        <figcaption class="small text-white ml-3 mr-3">1. Treaty of Greenville (1795); 2. Treaty of Detroit (1807); 3. Treaty of the Maumee Rapids (1817); 4. Treaty of Saginaw (1819); 5. Treaty of Sault Ste. Marie (1820); 6. Treaty of Chicago (1821); 7. Treaty of Carey Mission (1828); 8. Treaty of Chicago (1833); 9. Treaty of Washington (1836); 10. Treaty of the Cedars (1836); 11. Treaty of La Pointe (1842)</figcaption>
                     </figure>
                     <div class="col-xl-6 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h2 class="text-white mb-3">Design</h2>
                             <p class="text-white mb-3">
-                              At the core of <i>Six Degrees of Great Lakes Treaties</i> is an interactive visualization of connections between approximately 1,600 Anishinaabe and American signers of 24 treaties beginning with the Treaty of Greenville (1795) and ending with the Treaty of Detroit (1855). It can be viewed by clicking the "Visualization" button above. Initially, the aim of this project was to analyze the signers of <u><a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Text_of_Michigan_Related_Treaties/Pages/Map-of-Treaty-Cessions.aspx" target="_blank">11 treaties</a></u> that resulted in the cession of Indigenous Lands (pictured to the left) the United States government would eventually consolidate into the state of Michigan. However, it soon became clear that concentrating solely on these documents would lead to incomplete work. In the decades following European contact, Ojibwe, Odawa, and Potawatomi peoples who called what is now Michigan home (whose descendents, indeed, continue to call it home) navigated between borders Euro-American powers were attempting to cement. They transgressed territorial, state, and national lines which remained remarkably permeable well into the nineteenth century.
+                              At the core of <i>Six Degrees of Great Lakes Treaties</i> is an interactive visualization of connections between approximately 1,600 Anishinaabe and American signers of 24 treaties beginning with the Treaty of Greenville (1795) and ending with the Treaty of Detroit (1855). It can be viewed by clicking the "Visualization" button above. Initially, the aim of this project was to analyze the signers of <u><a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Text_of_Michigan_Related_Treaties/Pages/Map-of-Treaty-Cessions.aspx" target="_blank">11 treaties</a></u> that resulted in the cession of Indigenous Lands (pictured to the left) the United States government would eventually consolidate into the state of Michigan. However, it soon became clear that concentrating solely on these documents would produce an incomplete work of digital cultural heritage. In the decades following European contact, Ojibwe, Odawa, and Potawatomi peoples who called what is now Michigan home (indeed, whose descendents continue to call it home) navigated between borders Euro-American powers were attempting to cement. They transgressed territorial and national lines which remained remarkably permeable well into the nineteenth century.
                             </p>
                             <p class="text-white mb-0">
-                              What started as a Michigan story quickly broadened to encompass most of the Great Lakes region amid an era of American expansion and state formation. How might Indigenous mobility in such a space coupled with Anishinaabe and American individuals' participation in multiple treaty negotiations have complicated these processes? Furthermore, what kinds of individuals repeatedly appeared to sign compacts with such significant consequences? The visualization <i>Six Degrees of Great Lakes Treaties</i> provides will hopefully help untangle the twisting and turning relationships between late-eighteenth and nineteenth-century treaty signers. Visitors to this site can also aid in that endeavour by leaving comments or critiques on the project <u><a href="https://drive.google.com/file/d/1C2mYjMc29HMtJ1mW9S4PY7hHvgCqg8eI/view?usp=sharing" target="_blank">dataset</a></u>. Data was scraped from treaties listed in the "Sources" section below and cleaned using <u><a href="https://openrefine.org/" target="_blank">OpenRefine</a></u>.
+                              Thus, what started as a Michigan story quickly broadened to encompass most of the Great Lakes region, and it raised an assortment of important questions along the way. How, for instance, might Indigenous mobility in such a space coupled with Anishinaabe and American individuals' participation in multiple treaty negotiations have complicated American expansion and state formation efforts? Furthermore, what kinds of individuals repeatedly appeared to sign compacts with such significant consequences? The visualization <i>Six Degrees of Great Lakes Treaties</i> presents will hopefully help untangle the twisting and turning relationships late-eighteenth and nineteenth-century treaty signers shared. Visitors to this site can aid in that endeavour by leaving comments or critiques on the project <u><a href="https://drive.google.com/file/d/1C2mYjMc29HMtJ1mW9S4PY7hHvgCqg8eI/view?usp=sharing" target="_blank">dataset</a></u>. Data was scraped from treaties listed in the "Sources" section below and cleaned using <u><a href="https://openrefine.org/" target="_blank">OpenRefine</a></u>.
                             </p>
                         </div>
                     </div>
                 </div>
                 <!-- Content Row-->
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <figure class="col-lg-6">
-                        <img class="img-fluid mb-3 mb-lg-0" src="https://clements.umich.edu/wp-content/uploads/2019/12/mackinac-icon.jpg" alt="" />
-                        <figcaption class="small text-white ml-2 mr-2">"Indian Deed for the Island of Mackinac" (Courtesy: <u><a href="https://clements.umich.edu/exhibit/american-encounters/nah-case-5/signatures-from-mackinaw-island/" target="_blank">William L. Clements Library</a></u>)</figcaption>
+                    <figure class="col-lg-5">
+                        <img class="img-fluid mb-3 mb-lg-0" src="https://clements.umich.edu/wp-content/uploads/2019/12/mackinac-icon.jpg" alt="Deed to Mackinac Island featuring pictographs representing Indigenous signers characterized in the document as 'Representatives and Chiefs' of the 'Nation of the Chipiwas.'" />
+                        <center><figcaption class="text-white ml-2 mr-2">"Indian Deed for the Island of Mackinac" (Courtesy: <u><a href="https://clements.umich.edu/exhibit/american-encounters/nah-case-5/signatures-from-mackinaw-island/" target="_blank">William L. Clements Library</a></u>)</figcaption></center>
                     </figure>
-                    <div class="col-lg-6 order-lg-first">
+                    <div class="col-lg-7 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white mb-4">A Tale of Two Treaties</h4>
-                            <p class="mb-0 text-white">
-                              <!-- In many ways, <i>Six Degrees of Great Lakes Treaties</i> could be viewed as a more geographically focused companion to the <a href="http://portal.treatysigners.org/us/SitePages/AboutILTF.aspx" target="_blank">"US Treaty Signer Project"</a>. Both aim to assist in the navigation of dense government documents that ofen obscure the identities of Indigenous actors.-->
+                            <h4 class="text-white mb-0">Scholarly Potential; or,</h4>
+                            <h4 class="text-white mb-3">A Tale of Two Compacts</h4>
+                            <p class="mb-3 text-white">
+                              To better understand how <i>Six Degrees of Great Lakes Treaties</i> could enrich analyses of late-eighteenth and nineteenth-century treaty negotiations, an examination of two documents is beneficial. First, there is the deed to Mackinac Island (pictured to the right), which Ojibweg in northern Michigan sold to the British government in 1781. On display in the deed are pictographs symbolizing the clans (or <i>nindoodemag</i>) of the Ojibwe signers who the document characterizes as "Representatives and Chiefs" of the "Nation of the Chipiwas." Perplexingly, though, none of these pictographs seem to resemble those of <i>nindoodemag</i> most commonly present at contemporary diplomatic engagements. Historian Heidi Bohaker <u><a href="https://read.dukeupress.edu/ethnohistory/article-abstract/57/1/11/8886/Reading-Anishinaabe-Identities-Meaning-and" target="_blank">argues</a></u> that "frequency variations [among <i>nindoodem</i> pictographs] reflect the political importance of some clans at specific locations." So, why would British officials invite members of <i>nindoodemag</i> whose presence around Mackinac Island was less pronounced than others to act as representatives at its sale? Considering a second document presents a potential explanation...
                             </p>
+                            <div class="wrap-collabsible">
+                              <input id="collapsible" class="toggle" type="checkbox">
+                              <label for="collapsible" class="lbl-toggle">Continue Reading</label>
+                              <div class="collapsible-content">
+                                <div class="content-inner">
+                                  <p class="mb-0 text-white">
+                                    Following the intercession of Indian Agent Henry Rowe Schoolcraft behind the backs of Ojibwe and Odawa diplomats, the Treaty of Washington (1836) led to the cession of over one third of the future state of Michigan to the United States government. Well before negotiations began, however, Schoolcraft was already maneuvering to boost Anishinaabe receptiveness to American terms. He dispatched his mixed ancestry brother-in-law, William Johnston, to Sault Ste. Marie to recruit some of his kinsmen to serve as Indigenous ambassadors. Consequently, Ojibwe leader Waub Ogeeg traveled to Washington, D.C. even though, as scholar Charles E. Cleland <u><a href="https://www.press.umich.edu/4875383/faith_in_paper" target="_blank">asserts</a></u>, he was "of the <i>addik</i>, or caribou, totem from western Lake Superior and...[therefore] not [one of the] legitimate speakers for people who resided at Sault Ste. Marie." Schoolcraft surely hoped that one of his relatives could sway other Anishinaabe leaders despite the dubiousness of his position as a proxy for his community. Thinking back to 1781, could the British have similarly brokered Mackinac Island's sale with Ojibweg they shared especially strong relations with regardless of <i>nindoodemag</i>?
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
                             <hr class="d-none d-lg-block mb-0 ml-0" />
                         </div>
                         </div>
@@ -136,19 +148,21 @@
                 </div>
               <!-- Chart Row-->
               <div class="row justify-content-center no-gutters">
-                  <table class="col-xl-6 columns">
+                  <table class="col-xl-1 columns">
                     <tr>
-                      <td><div id="nation_chart_div" style="border: 3px solid #000000"></div></td>
-                      <td><div id="title_chart_div" style="border: 3px solid #000000"></div></td>
+                      <td><div id="nation_chart_div" style="padding: 10px"></div></td>
+                      <td><div id="title_chart_div" style="padding: 10px"></div></td>
                     </tr>
                   </table>
-                  <div class="col-xl-6 order-lg-last">
+                  <div class="col-xl-11 order-lg-last">
                       <div class="bg-black text-center h-100 project">
                       <div class="d-flex h-100">
                       <div class="project-text w-100 my-auto text-center text-lg-right">
-                        <h4 class="text-white mb-4">A Tale of Two Treaties</h4>
+                        <h4 class="text-white mb-4">Key Considerations</h4>
                         <p class="mb-0 text-white">
-                          <!-- Hunting, fishing, producing maple sugar, and interacting with their homelands in a multitude of other ways propelled Ojibwe, Odawa, and Potawatomi peoples to tred beyond the lines Euro-American powers claimed were drawn upon their lands and waters. Despite repeated threats, Indigenous people around Michilimackinac did not face removal like other aboriginal groups in the Old Northwest, and that likely complicated the processes of U.S. state formation. In a recent text about the much more geographically isolated Grand Marais, scholar Timothy Cochrane asserts that the U.S. government possessed an interest in the American Fur Company (AFC) post on the farthest outskirts of the Michigan Territory because “[h]aving Americans on the ground, on the lands at question, could have substantially helped the argument that the border should be along the traditional water route, or the border we have today.”  The AFC, in other words, tacitly participated in the project of securing the northern border of the U.S.-->
+                          COMING SOON!
+                          <!-- Hunting, fishing, producing maple sugar, and interacting with their homelands in a multitude of other ways propelled Ojibwe, Odawa, and Potawatomi peoples to tred beyond the lines Euro-American powers claimed were drawn upon their lands and waters. Despite repeated threats, Indigenous people around Michilimackinac did not face removal like other aboriginal groups in the Old Northwest, and that likely complicated the processes of U.S. state formation.-->
+                          <!-- In many ways, <i>Six Degrees of Great Lakes Treaties</i> could be viewed as a more geographically focused companion to the <u><a href="http://portal.treatysigners.org/us/SitePages/AboutILTF.aspx" target="_blank"><i>US Treaty Signer Project</i></a></u>. Both aim to assist in the navigation of dense government documents that ofen obscure the identities of Indigenous actors. Also, consider historian Claudio Saunt's <u><a href="https://usg.maps.arcgis.com/apps/webappviewer/index.html?id=eb6ca76e008543a89349ff2517db47e6" target="_blank"><i>Invasion of America</i></a></u> -->
                         </p>
                         <hr class="d-none d-lg-block mb-0 mr-0" />
                       </div>
@@ -166,7 +180,7 @@
                   <table class="text-white mb-4">
                     <thead>
                       <tr>
-                        <td colspan="3">To further contextualize the visualization at the center of this project, a complete list of treaties it incorporates is provided below. Within the "Treaty Name" column are the most commonly used names for each document. Adjacent entries listed under "Alternate Name" represent these documents' formal titles as recorded in the second volume of Charles J. Kappler's <i>Indian Affairs: Laws and Treaties</i> (Washington, D.C.: Government Printing Office, 1904), which is digitally accessible through the <u><a href="https://dc.library.okstate.edu/digital/collection/kapplers" target="_blank">Oklahoma State University Library</a></u>. Finally, links to scanned copies of original treaties and/or cleaner transcripts of these primary sources are compiled under "Original/Transcript" based on their availablity. All links to accessible scans derive from <i><u><a href="https://digitreaties.org/treaties/" target="_blank">Treaties Explorer</a></u></i>, a project that the <u><a href="https://omeka.dlcs-ida.org/s/ida/page/home" target="_blank">Indigenous Digital Archive</a></u> has spearheaded in conjunction with the National Archives. Transcripts added for their enhanced readibility originate from either the Yale Law School Lillian Goldman Law Library's <i><u><a href="https://avalon.law.yale.edu/" target="_blank">Avalon Project</a></u></i> or Central Michigan University's Clarke Historical Library <u><a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Pages/default.aspx" target="_blank">Research Resources</a></u>.</td>
+                        <td colspan="3">To further contextualize the visualization at the center of this project, a complete list of the treaties it incorporates is provided below. Within the "Treaty Name" column are the most commonly used names for each document. Adjacent entries listed under "Alternate Name" represent these documents' formal titles as recorded in the second volume of Charles J. Kappler's <i>Indian Affairs: Laws and Treaties</i> (Washington, D.C.: Government Printing Office, 1904), which is digitally accessible through the <u><a href="https://dc.library.okstate.edu/digital/collection/kapplers" target="_blank">Oklahoma State University Library</a></u>. Finally, links to scanned copies of original treaties and/or cleaner transcripts of these primary sources are compiled under "Original/Transcript" based on their availablity. All links to accessible scans derive from <i><u><a href="https://digitreaties.org/treaties/" target="_blank">Treaties Explorer</a></u></i>, a project that the <u><a href="https://omeka.dlcs-ida.org/s/ida/page/home" target="_blank">Indigenous Digital Archive</a></u> has spearheaded in conjunction with the National Archives. Transcripts added for their enhanced readibility originate from either the Yale Law School Lillian Goldman Law Library's <i><u><a href="https://avalon.law.yale.edu/" target="_blank">Avalon Project</a></u></i> or Central Michigan University's Clarke Historical Library <u><a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Pages/default.aspx" target="_blank">research resources</a></u>.</td>
                       </tr>
                       <tr>
                         <th><p class="text-white mt-4">Treaty Name</p></th>
@@ -211,7 +225,7 @@
                         <td><a href="https://digitreaties.org/treaties/treaty/101784571/" target="_blank">TE</a>, <a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Text_of_Michigan_Related_Treaties/Pages/Saginaw,-1820.aspx" target="_blank">CL</a></td>
                       </tr>
                       <tr>
-                        <td>Treaty at Sault Ste. Marie</td>
+                        <td>Treaty of Sault Ste. Marie</td>
                         <td><a href="https://dc.library.okstate.edu/digital/collection/kapplers/id/26029" target="_blank">Treaty with the Chippewa, 1820</a></td>
                         <td><a href="https://digitreaties.org/treaties/treaty/102035701/" target="_blank">TE</a>, <a href="https://www.cmich.edu/library/clarke/ResearchResources/Native_American_Material/Treaty_Rights/Text_of_Michigan_Related_Treaties/Pages/Sault-Ste.-Marie,-1820.aspx" target="_blank">CL</a></td>
                       </tr>
